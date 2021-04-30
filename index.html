@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covictory</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Start Top Bar -->
+<!--     <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Blog</li>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- End Top Bar -->
+
+    <div class="callout large primary" id="top_header">
+      <div class="row column text-center">
+        <img src="assets/logo.png" width="300px"/>
+      </div>
+    </div>
+
+    <!-- We can now combine rows and columns when there's only one column in that row -->
+    <div class="row medium-8 large-7 columns">
+          <div id="main">
+        <form action="" method="POST" >
+            <input type="text" name="place" id="place" placeholder="Enter City/Town name here" required>
+            <fieldset class="fieldset">
+            <legend>Check your requirements</legend>
+            <div id="options">
+                        <input type="checkbox" name="beds" id="beds"  value="BED OR BEDS">
+                        <label for="">Beds</label>
+                        <input type="checkbox" name="oxygen" id="oxygen"  value="OR OXYGEN">
+                        <label for="">Oxygen</label>
+                        <input type="checkbox" name="food" id="food"  value="OR FOOD">
+                        <label for="">Food</label>
+                        <input type="checkbox" name="remdesivir" id="remdesivir"  value="OR Remdesivir">
+                        <label for="">Remdesivir</label>
+                  <br>
+                        <input type="checkbox" name="fabiflu" id="Fabiflu"  value="OR Fabiflu">
+                        <label for="">Fabiflu</label> 
+                        <input type="checkbox" name="ventilator" id="Ventilator"  value="OR Ventilator">
+                        <label for="">Ventilator</label>
+                        <input type="checkbox" name="icu" id="ICU"  value="OR ICU">
+                        <label for="">ICU</label>
+                        <input type="checkbox" name="tests" id="tests"  value=" OR Tests">
+                        <label for="">Tests</label>
+                  <br>
+                        <input type="checkbox" name="plasma" id="Plasma"  value="OR Plasma">
+                        <label for="">Plasma</label> 
+                        <input type="checkbox" name="tocilizumab" id="Tocilizumab"  value="OR Tocilizumab">
+                        <label for="">Tocilizumab</label>
+                        <input type="checkbox" name="icu" id="Favipiravir"  value="OR Favipiravir">
+                        <label for="">Favipiravir</label>
+              </fieldset>
+                        <label for="">Others: (if any)</label>
+                        <input type="text" name="others" id="Others" placeholder="Please type keywords"> 
+            </div>
+            <br>
+            <div class="searchBtnDiv">
+                <button class="button" type="button" onclick="generateLink()" data-open="exampleModal1"> Search</button>
+            </div>
+        </form>
+
+    </div>
+    </div>
+
+    </div>
+<div class="reveal" id="exampleModal1" data-reveal>
+  <p>1. Make sure your results are sorted by "Latest"<br><img src="assets/sort-click-here.jpg"/></p>
+  <p id="mandatory-msg" style="color:red">* Please select a City/Town</p>
+  <a class="linkBtn">Go to Resources!</a>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- footer -->
+<footer class="social-footer">
+  <div class="social-footer-left">
+   <a href="https://www.pmcares.gov.in/en/web/contribution/donate_india"><i class="fas fa-donate"></i></a>
+  </div>
+  <div class="social-footer-icons">
+    <ul class="menu simple">
+      <li><a href="https://github.com/ekagrashukla"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li><a href=><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="https://kit.fontawesome.com/5de545e21a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+
+
