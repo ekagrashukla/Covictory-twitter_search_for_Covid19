@@ -20,7 +20,7 @@ You can use Covictory to search for Covid19 resources like beds,oxygen,medicines
 
   - [HTML] - For Structuring
   - [CSS] - For Styling
-  - [JavaScript] - For generating Twitter earch URLs
+  - [JavaScript] - For generating Twitter search URLs
   - [Zurb Foundation] - For making UI
 
 ## Getting Started
