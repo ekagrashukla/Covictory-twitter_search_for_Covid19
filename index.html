@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covictory</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
@@ -42,41 +44,83 @@
     </div>
 
     <!-- We can now combine rows and columns when there's only one column in that row -->
-    <div style="background-color:#FFFF66;" class="row medium-8 large-7 columns">
+    <div class="container">
+    <div style="background: rgba( 0, 0, 0, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+     padding-top: 25px; padding-bottom: 25px; margin-bottom: 2em; height: 100%;" class="row medium-8 large-7 columns">
           <div id="main">
         <form action="" method="POST" >
             <input type="text" name="place" id="place" placeholder="Enter City/Town name here" required>
             <fieldset class="fieldset">
             <legend>Check your requirements</legend>
             <div id="options">
+                    <div class="box1">
+                      <div class="beds">
                         <input type="checkbox" name="beds" id="beds"  value="BED OR BEDS">
                         <label for=""><b>Beds</b></label>
+                      </div>
+                      <div class="oxygen">
                         <input type="checkbox" name="oxygen" id="oxygen"  value="OR OXYGEN">
                         <label for=""><b>Oxygen</b></label>
+                      </div>
+                    </div>
+
+                    <div class="box2">
+                      <div class="food">
                         <input type="checkbox" name="food" id="food"  value="OR FOOD">
                         <label for=""><b>Food</b></label>
-                        <br>          
-                        <input type="checkbox" name="remdesivir" id="remdesivir"  value="OR Remdesivir">
-                        <label for=""><b>Remdesivir</b></label>
-                        <input type="checkbox" name="fabiflu" id="Fabiflu"  value="OR Fabiflu">
-                        <label for=""><b>Fabiflu</b></label> 
-                        <input type="checkbox" name="ventilator" id="Ventilator"  value="OR Ventilator">
-                        <label for=""><b>Ventilator</b></label>
-                        <br>          
-                        <input type="checkbox" name="icu" id="ICU"  value="OR ICU">
-                        <label for=""><b>ICU</b></label>
+                      </div>
+                      <div class="test">
                         <input type="checkbox" name="tests" id="tests"  value=" OR Tests">
                         <label for=""><b>Tests</b></label>
-                        <input type="checkbox" name="plasma" id="Plasma"  value="OR Plasma">
-                        <label for=""><b>Plasma</b></label>
-                        <br>
+                      </div>
+                    </div>
+
+                    <div class="box3">
+                      <div class="fabiflu">
+                        <input type="checkbox" name="fabiflu" id="Fabiflu"  value="OR Fabiflu">
+                        <label for=""><b>Fabiflu</b></label> 
+                      </div>
+                      <div class="ventilator">
+                        <input type="checkbox" name="ventilator" id="Ventilator"  value="OR Ventilator">
+                        <label for=""><b>Ventilator</b></label>
+                      </div>
+                    </div>
+
+                    <div class="box4">
+                      <div class="tocilizumab">
                         <input type="checkbox" name="tocilizumab" id="Tocilizumab"  value="OR Tocilizumab">
                         <label for=""><b>Tocilizumab</b></label>
+                      </div>
+                      <div class="icu">
+                        <input type="checkbox" name="icu" id="ICU"  value="OR ICU">
+                        <label for=""><b>ICU</b></label>
+                      </div>
+                    </div>
+
+                    <div class="box5">
+                      <div class="plasma">
+                        <input type="checkbox" name="plasma" id="Plasma"  value="OR Plasma">
+                        <label for=""><b>Plasma</b></label>
+                      </div>
+                      <div class="remdesivir">
+                        <input type="checkbox" name="remdesivir" id="remdesivir"  value="OR Remdesivir">
+                        <label for=""><b>Remdesivir</b></label>
+                      </div>
+                    </div>
+
+                      <div class="favipiravir">
                         <input type="checkbox" name="icu" id="Favipiravir"  value="OR Favipiravir">
                         <label for=""><b>Favipiravir</b></label>
+                      </div>
               </fieldset>
+                     <div class="other-keyword">
                         <label for="">Others: (if any)</label>
                         <input type="text" name="others" id="Others" placeholder="Please type keywords"> 
+                      </div>
             </div>
             <br>
             <div class="searchBtnDiv">
@@ -96,6 +140,7 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+</div>
 
 <!-- footer -->
 <footer class="social-footer">
@@ -110,6 +155,11 @@
     </ul>
   </div>
 </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
