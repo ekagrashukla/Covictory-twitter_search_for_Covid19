@@ -76,5 +76,3 @@ function generateLink()
             document.getElementById("mandatory-msg").style.visibility = "visible";
         }
     }
-
-
